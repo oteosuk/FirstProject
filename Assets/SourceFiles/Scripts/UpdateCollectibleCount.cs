@@ -23,7 +23,7 @@ public class UpdateCollectibleCount : MonoBehaviour
 
     private void UpdateCollectibleDisplay()
     {
-        int totalCollectibles = FindObjectsByType<Pickup>(FindObjectsSortMode.None).Length;
+        int totalCollectibles = FindObjectsByType<Pickup>().Length;
         collectibleText.text = $"Collectibles remaining: {totalCollectibles}";
     }
 }
