@@ -1,0 +1,11 @@
+{
+  "enabledMcpjsonServers": [
+    "serena",
+    "sequential-thinking"
+  ],
+  "permissions": {
+    "allow": [
+      "mcp__sequential-thinking__sequentialthinking"
+    ]
+  }
+}
