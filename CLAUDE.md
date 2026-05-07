@@ -32,6 +32,30 @@
 ### 5단계 — 에셋 관리
 - Addressables (웨이브별 동적 에셋 로딩)
 
+## 코딩 컨벤션 (Unity 공식 스타일 가이드)
+
+### 네이밍
+- 클래스, 메서드, 프로퍼티 → `PascalCase`
+- private 필드 → `_camelCase` (언더스코어 접두사)
+- 파라미터, 로컬 변수 → `camelCase`
+- 상수 → `ALL_CAPS`
+- 인터페이스 → `I` 접두사 (예: `IDamageable`)
+- bool → `is/has/can` 접두사 (예: `_isAlive`, `_hasKey`)
+
+### 클래스 내부 선언 순서
+1. 상수
+2. `[SerializeField]` 필드 (Inspector 노출)
+3. private 필드
+4. 프로퍼티
+5. Unity 메서드 (`Awake`, `Start`, `Update` 등)
+6. public 메서드
+7. private 메서드
+
+### 기타
+- Inspector 노출은 `public` 대신 `[SerializeField] private` 사용
+- 한 줄 `if`도 중괄호 생략하지 않음
+- `using` 선언은 파일 최상단
+
 ## 협업 지침
 - 한 단계씩 완료 후 다음 단계로 넘어간다.
 - 각 기술은 실제 게임 기능에 자연스럽게 녹아들도록 구현한다.
