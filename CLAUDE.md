@@ -51,6 +51,10 @@
 6. public 메서드
 7. private 메서드
 
+### 주석
+- 학습 목적 프로젝트이므로 각 개념(abstract, override, Overloading 등)에 WHAT 주석 작성
+- 주석은 한국어로 작성
+
 ### 기타
 - Inspector 노출은 `public` 대신 `[SerializeField] private` 사용
 - 한 줄 `if`도 중괄호 생략하지 않음
